@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ExpoInfo</title>
+    <link rel="stylesheet" href="/cssCode/mainNav.css">
+    <link rel="stylesheet" href="/cssCode/footer.css">
+    <link rel="stylesheet" href="#">
+</head>
+<body>
+    <div id="app">
+    <header class="mainNav">
+        <img class="Logo" src="/SitePhoto/LongLogo.svg"/>
+        <router-link class="buttCss" to="/eventsFuture">Анонсы</router-link>
+        <router-link class="buttCss" to="/eventsNow">Идёт сейчас</router-link>
+        <router-link class="buttCss" to="/eventsPast">Прошедшее</router-link>
+        <router-link class="buttCss" to="/tags">Тематика</router-link>
+    </header>
+    <router-view></router-view>
+    <footer class="mainFooter">
+        <a href="#" class="foot1">Об Авторе</a>
+        <router-link class="foot2" to="/eventsFuture">Анонсы</router-link>
+        <router-link class="foot2" to="/eventsNow">Идёт сейчас</router-link>
+        <router-link class="foot2" to="/eventsPast">Прошедшее</router-link>
+        <router-link class="foot2" to="/tags">Тематика</router-link>
+        <p class="foot3">Дипломный проект Рыбакова Сергея</p>
+        <img class="Logo2" src="/SitePhoto/ShortLogo.svg"/>
+    </footer>
+    </div>
+    <script src="/jsCode/variables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="/jsCode/eventsFuture.js"></script>
+    <script src="/jsCode/eventsNow.js"></script>
+    <script src="/jsCode/eventsPast.js"></script>
+    <script src="/jsCode/app.js"></script>
+</body>
+</html>

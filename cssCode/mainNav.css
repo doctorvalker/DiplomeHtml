@@ -1,0 +1,19 @@
+.mainNav {
+    width: 100vw;
+    height: 14vh;
+}
+
+.Logo {
+    width: 20vw;
+    height: 10vh;
+}
+
+.buttCss {
+    position: relative;
+    background: #D07070;
+    padding: 0.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-decoration: none;
+    color: #000000;
+}

@@ -1,0 +1,35 @@
+.mainFooter {
+    background: #999999;
+    width: 100vw;
+    height: 20vh;
+}
+
+.foot1 {
+    position: relative;
+    top: 2vh;
+    left: 10vw;
+}
+
+.foot2 {
+    position: relative;
+    top: -0.1vh;
+    left: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+}
+
+.foot3 {
+    position: relative;
+    top: -9vh;
+    left: 45vw;
+}
+
+.Logo2 {
+    width: 8vw;
+    height: 8vw;
+    position: relative;
+    left: 80vw;
+    top: -13vh;
+}

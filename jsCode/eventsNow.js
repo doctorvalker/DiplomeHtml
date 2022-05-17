@@ -1,3 +1,28 @@
-const eventsNow = {template:
-    '<h1>А что идёт сейчас?</h1>'
+const eventsNow = {template:`
+    <h1 class='themeCss'>А что идёт сейчас?</h1>
+    <div class="eventsList" v-for="evN in eventNow">
+        <div class= eventCard>
+            <img src={{evN.eventPicture}}>
+            <p>{{evP.eventName}}</p>
+        </div>
+    </div>
+`,
+
+data(){
+    return{
+        eventNow:[]
+    }
+},
+methods:{
+    refreshData(){
+        axios.get(variables.API_URL+"EventsNow")
+        .then((response)=>{
+            this.eventNow=response.data;
+        });
+    }
+},
+mounted:function(){
+    this.refreshData();
+}
+
 }

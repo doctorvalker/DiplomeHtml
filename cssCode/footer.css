@@ -8,6 +8,8 @@
     position: relative;
     top: 2vh;
     left: 10vw;
+    text-decoration: none;
+    color: #000000;
 }
 
 .foot2 {

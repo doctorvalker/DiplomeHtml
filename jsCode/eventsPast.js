@@ -2,8 +2,9 @@ const eventsPast = {template:`
 <h1 class='themeCss'>А что упустили?</h1>
 <div class="eventsList">
     <div class= eventCard v-for="evP in eventPast">
-        <img src="{{evP.eventPicture}}">
-        <p>{{evP.eventName}}</p>
+    <img class="cardIMG" :src="evP.eventPicture"/>
+    <p class = "textInfo">{{evP.eventName}}</p>
+    <router-link class="buttMenu" to="/eventsInfo/{{evP.eventId}}">Узнать больше</router-link>
     </div>
 </div>
 `,

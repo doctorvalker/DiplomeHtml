@@ -2,8 +2,9 @@ const eventsFuture = {template:`
 <h1 class='themeCss'>А что там дальше?</h1>
 <div class="eventsList">
     <div class= eventCard v-for="evF in eventFuture">
-        <img src="{{evF.eventPicture}}">
-        <p>{{evF.eventName}}</p>
+        <img class="cardIMG" :src="{{evF.eventPicture}}">
+        <p class = "textInfo">{{evF.eventName}}</p>
+        <router-link class="buttMenu" to="/eventsInfo/{{evF.eventId}}">Узнать больше</router-link>
     </div>
 </div>
 `,

@@ -1,7 +1,7 @@
 const tags = {template:`
     <div class="tagsList">
-        <div class= tagCard v-for="tg in tags">
-        <router-link class="buttMenu" to="/eventsTags/{{tg.tagId}}">{{tg.tag}}</router-link>
+        <div class="tagCard" v-for="tg in tags">
+            <router-link class="buttMenu" :to="{name: 'eventTags', params: {id: tg.tagId}}">{{tg.tag}}</router-link>
         </div>
     </div>
 `,

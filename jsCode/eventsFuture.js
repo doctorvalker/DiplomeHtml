@@ -4,7 +4,7 @@ const eventsFuture = {template:`
     <div class= eventCard v-for="evF in eventFuture">
         <img class="cardIMG" :src="{{evF.eventPicture}}">
         <p class = "textInfo">{{evF.eventName}}</p>
-        <router-link class="buttMenu" to="/eventsInfo/{{evF.eventId}}">Узнать больше</router-link>
+        <router-link class="buttMenu" :to="{name: 'eventInfo', params: {id: evP.eventId}}">Узнать больше</router-link>
     </div>
 </div>
 `,

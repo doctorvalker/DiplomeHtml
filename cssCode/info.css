@@ -1,0 +1,104 @@
+.mainInfo {
+    width: 100vw;
+    height: 62vh;
+}
+
+.evInfo {
+    width: 100vw;
+    height: 60vh;
+    overflow-x: hidden;
+}
+
+.eventIMG {
+    width: 30vw;
+    height: 40vh;
+}
+
+.eventNm {
+    position: relative;
+    left: 35vw;
+    top: -22vw;
+    font-size: 2vw;
+    margin: 2vw;
+}
+
+.eventDs {
+    position: relative;
+    width: 35vw;
+    left: 35vw;
+    top: -22vw;
+    margin: 2vw;
+}
+
+.dts {
+    position: relative;
+    width: 7vw;
+    left: 35vw;
+    top: -22vw;
+    margin: 2vw; 
+}
+
+.DOSE {
+    position: relative;
+    width: 10vw;
+    left: 35vw;
+    top: -23vw;
+    margin: 2vw;
+}
+
+.ddrss {
+    position: relative;
+    width: 7vw;
+    left: 70vw;
+    top: -28vw;
+    margin: 2vw;
+}
+
+.address {
+    position: relative;
+    width: 15vw;
+    left: 70vw;
+    top: -29vw;
+    margin: 2vw;
+}
+
+.markAVG {
+    position: relative;
+    width: 20vw;
+    top: -22vw;
+    margin: 2vw;
+    font-size: 2vw;
+}
+
+.cmmnts {
+    position: relative;
+    width: 15vw;
+    height: 30vh;
+    left: 50vw;
+    top: -36vw;
+    border: 0.1vw solid orange;
+    border-radius: 0.4vw;
+    overflow-x: auto;
+}
+
+.cmmntsPost {
+    position: relative;
+    width: 14.5vw;
+    height: 6vh;
+    left: 70vw;
+    top: -90vh;
+    border: 0.1vw solid orange;
+    border-radius: 0.4vw;
+}
+
+.cmmntText {
+    position: relative;
+    top: 0.9vh;
+}
+
+.markText {
+    position: relative;
+    top: -45vh;
+    display: flex;
+    flex-direction: column;
+}

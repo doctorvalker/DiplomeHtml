@@ -3,7 +3,10 @@ const routes = [
     {path: "/eventsNow",component:eventsNow},
     {path: "/eventsFuture",component:eventsFuture},
     {path: "/eventsPast",component:eventsPast},
-    {path: "/aboutAuthor",component:aboutAuthor}
+    {path: "/tags",component:tags},
+    {path: "/eventsInfo/:id",component:eventsInfo,name:"eventInfo"},
+    {path: "/eventsTags/:id",component:eventsTags,name:"eventTags"},
+    {path: "/subApp",component:submitApp}
 ]
 
 const router = VueRouter.createRouter({

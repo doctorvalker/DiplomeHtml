@@ -1,10 +1,9 @@
-const eventsPast = {template:`
-<h1 class='themeCss'>А что упустили?</h1>
+const eventsTags = {template:`
 <div class="eventsList">
     <div class= eventCard v-for="evT in eventTags">
     <img class="cardIMG" :src="evT.eventPicture"/>
     <p class = "textInfo">{{evT.eventName}}</p>
-    <router-link class="buttMenu" to="/eventsInfo/{{evT.eventId}}">Узнать больше</router-link>
+    <router-link class="buttMenu" :to="{name: 'eventInfo', params: {id: evT.eventId}}">Узнать больше</router-link>
     </div>
 </div>
 `,
@@ -16,9 +15,10 @@ return{
 },
 methods:{
 refreshData(){
-    axios.get(variables.API_URL+"EventsTags")
+    console.log(this.$route.params.id)
+    axios.get(variables.API_URL+"EventsTags/" + this.$route.params.id)
     .then((response)=>{
-        this.eventPast=response.data;
+        this.eventTags=response.data;
     });
 }
 },
